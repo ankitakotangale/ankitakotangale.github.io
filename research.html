@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Ankita Kotangale</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #263449;
+      --accent: #a56d55;
+      --muted: #65717d;
+      --line: #e8e0d8;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #fcfaf7;
+      color: var(--ink);
+      font: 16px/1.8 "DM Sans", sans-serif;
+    }
+    header, main, footer {
+      padding-left: max(25px, calc((100% - 950px)/2));
+      padding-right: max(25px, calc((100% - 950px)/2));
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand, h1, h2, h3 {
+      font-family: "Libre Baskerville", Georgia, serif;
+    }
+    .brand { font-weight: bold; font-size: 19px; }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--accent); }
+    .intro { padding: 85px 0 65px; }
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: clamp(38px, 6vw, 60px);
+      line-height: 1.2;
+      margin: 18px 0;
+    }
+    h2 { font-size: 28px; line-height: 1.4; }
+    .lead { font-size: 20px; max-width: 780px; }
+    p { color: var(--muted); }
+    .project {
+      padding: 45px 0;
+      border-top: 1px solid var(--line);
+    }
+    .project h2 { margin: 15px 0; }
+    .project p { max-width: 800px; }
+    .tag {
+      display: inline-block;
+      padding: 4px 12px;
+      border: 1px solid #e1d5ca;
+      border-radius: 20px;
+      color: #8a604d;
+      font-size: 12px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+    .status {
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+    }
+    footer {
+      border-top: 1px solid var(--line);
+      padding-top: 30px;
+      padding-bottom: 30px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media(max-width:650px) {
+      .intro { padding: 55px 0; }
+      nav { gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">Ankita Kotangale</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="index.html#teaching">Teaching</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro">
+      <div class="eyebrow">Research & Scholarship</div>
+      <h1>My Research</h1>
+      <p class="lead">
+        I investigate how design thinking develops through
+        authentic learning experiences, and how educators
+        can support and assess these skills in computing
+        and engineering education.
+      </p>
+    </div>
+
+    <article class="project">
+      <div class="eyebrow">Research Project 01</div>
+      <h2>Design Thinking in Computing and Engineering Education</h2>
+      <p class="status">Higher Education Research</p>
+      <p>
+        This study explores computing and engineering
+        educators' perspectives on the role of design
+        thinking in professional practice, including
+        the skills they consider important and the ways
+        these skills can be incorporated into education.
+      </p>
+      <span class="tag">Design Thinking</span>
+      <span class="tag">Faculty Perspectives</span>
+      <span class="tag">Higher Education</span>
+    </article>
+
+    <article class="project">
+      <div class="eyebrow">Research Project 02</div>
+      <h2>Developing Design Thinking Through Authentic Learning</h2>
+      <p class="status">GERI High School Study</p>
+      <p>
+        This study examines students' development of
+        design thinking mindsets and skills during
+        hands-on engineering design experiences in
+        Purdue's gifted education summer programs.
+        It uses pre- and post-assessments to explore
+        changes in learners' design thinking.
+      </p>
+      <span class="tag">Authentic Learning</span>
+      <span class="tag">Engineering Design</span>
+      <span class="tag">Assessment</span>
+    </article>
+
+    <article class="project">
+      <div class="eyebrow">Research Project 03</div>
+      <h2>Design Thinking in FIRST Robotics</h2>
+      <p class="status">Robotics Education Research</p>
+      <p>
+        This research investigates design thinking
+        in FIRST Robotics learning environments,
+        including the experiences of students
+        participating in FTC and FRC programs.
+        It considers how collaborative engineering
+        design experiences relate to design thinking.
+      </p>
+      <span class="tag">FIRST Robotics</span>
+      <span class="tag">FTC & FRC</span>
+      <span class="tag">Collaborative Design</span>
+    </article>
+
+    <article class="project">
+      <div class="eyebrow">Future Research</div>
+      <h2>Human–AI Collaboration in Design Thinking</h2>
+      <p class="status">Proposed Research Direction</p>
+      <p>
+        My future research interests include examining
+        how human–AI collaboration may influence
+        design thinking processes, learner agency,
+        and the development of design solutions.
+      </p>
+      <span class="tag">Human–AI Collaboration</span>
+      <span class="tag">Learner Agency</span>
+      <span class="tag">Design Learning</span>
+    </article>
+  </main>
+
+  <footer>
+    © 2026 Ankita Kotangale · Purdue University
+  </footer>
+</body>
+</html>
