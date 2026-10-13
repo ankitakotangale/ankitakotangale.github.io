@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Teaching & Learning Design | Ankita Kotangale</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #263449;
+      --accent: #a56d55;
+      --muted: #65717d;
+      --line: #e8e0d8;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: #fcfaf7;
+      color: var(--ink);
+      font: 16px/1.8 "DM Sans", sans-serif;
+    }
+    header, main, footer {
+      padding-left: max(25px, calc((100% - 950px)/2));
+      padding-right: max(25px, calc((100% - 950px)/2));
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand, h1, h2, h3 {
+      font-family: "Libre Baskerville", Georgia, serif;
+    }
+    .brand { font-weight: bold; font-size: 19px; }
+    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--accent); }
+    .intro { padding: 85px 0 60px; }
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: clamp(38px, 6vw, 60px);
+      line-height: 1.2;
+    }
+    h2 { font-size: 28px; line-height: 1.4; }
+    h3 { font-size: 20px; }
+    p { color: var(--muted); }
+    .lead { font-size: 20px; max-width: 780px; }
+    section {
+      padding: 45px 0;
+      border-top: 1px solid var(--line);
+    }
+    .experience {
+      padding: 24px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .experience:last-child { border-bottom: none; }
+    .meta {
+      font-size: 14px;
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 28px;
+    }
+    .card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 25px;
+    }
+    footer {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    @media(max-width:650px) {
+      .grid { grid-template-columns: 1fr; }
+      .intro { padding: 55px 0; }
+      nav { gap: 12px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="brand" href="index.html">Ankita Kotangale</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro">
+      <div class="eyebrow">Teaching & Learning Design</div>
+      <h1>Creating Meaningful Learning Experiences</h1>
+      <p class="lead">
+        My teaching and learning design practice focuses
+        on authentic problem-solving, collaboration,
+        creativity, and helping learners connect ideas
+        to real-world challenges.
+      </p>
+    </div>
+
+    <section>
+      <div class="eyebrow">01 / Teaching Experience</div>
+      <h2>Teaching Experience</h2>
+
+      <div class="experience">
+        <h3>Think Like an Engineer</h3>
+        <p class="meta">
+          Instructor · Purdue University GERI · Summer 2025 & 2026
+        </p>
+        <p>
+          Facilitated hands-on engineering design
+          experiences for gifted high school learners.
+          Students explored human-centered design,
+          collaborated on authentic challenges,
+          developed prototypes, and reflected on
+          iterative problem-solving processes.
+        </p>
+      </div>
+
+      <div class="experience">
+        <h3>Graduate Teaching Assistant</h3>
+        <p class="meta">
+          Purdue Polytechnic Institute · 2020–2022
+        </p>
+        <p>
+          Supported university-level teaching and
+          learning activities in a technology-focused
+          academic environment.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="eyebrow">02 / Learning Design</div>
+      <h2>Learning Design & Curriculum Development</h2>
+      <p>
+        I am interested in designing learning environments
+        where learners engage with meaningful problems,
+        investigate user needs, test possible solutions,
+        and reflect on their learning.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Authentic Design Challenges</h3>
+          <p>
+            Learning activities centered on realistic
+            engineering and design problems, including
+            classroom redesign and prototype development.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Human-Centered Design</h3>
+          <p>
+            Activities that help learners understand
+            user perspectives through empathy mapping,
+            problem definition, and user feedback.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Collaborative Learning</h3>
+          <p>
+            Structured opportunities for teamwork,
+            communication, idea generation, and
+            collaborative problem-solving.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Reflection & Iteration</h3>
+          <p>
+            Learning experiences that encourage
+            students to revisit design decisions,
+            refine prototypes, and reflect on feedback.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="eyebrow">03 / Philosophy</div>
+      <h2>My Approach to Teaching</h2>
+      <p>
+        I approach teaching as an opportunity to create
+        meaningful experiences where learners actively
+        investigate problems, collaborate with others,
+        and develop thoughtful solutions.
+      </p>
+      <p>
+        I value learning environments that support
+        curiosity, creative exploration, reflection,
+        and the practical application of knowledge.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Ankita Kotangale · Purdue University
+  </footer>
+</body>
+</html>
