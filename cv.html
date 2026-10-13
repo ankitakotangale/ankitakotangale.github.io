@@ -4,309 +4,405 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic CV of Ankita Kotangale, PhD Candidate in Learning Design and Technology at Purdue University.">
   <title>Academic CV | Ankita Kotangale</title>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --ink: #263449;
-      --accent: #a56d55;
-      --muted: #65717d;
-      --line: #e8e0d8;
+      --ink: #202936;
+      --navy: #25364a;
+      --blue: #607a98;
+      --muted: #687381;
+      --line: #dfe4ea;
+      --soft: #f4f6f8;
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      background: #fcfaf7;
+      background: #fff;
       color: var(--ink);
       font: 16px/1.8 "DM Sans", sans-serif;
     }
-    header, main, footer {
-      padding-left: max(25px, calc((100% - 950px)/2));
-      padding-right: max(25px, calc((100% - 950px)/2));
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: var(--blue); }
+    .container {
+      width: min(1100px, calc(100% - 48px));
+      margin: 0 auto;
     }
-    header {
+    header { border-bottom: 1px solid var(--line); }
+    .header-inner {
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      gap: 15px;
-      padding-top: 24px;
-      padding-bottom: 24px;
-      border-bottom: 1px solid var(--line);
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 24px 0;
     }
-    .brand, h1, h2 {
+    .brand, h1, h2, h3 {
       font-family: "Libre Baskerville", Georgia, serif;
     }
-    .brand { font-size: 19px; font-weight: bold; }
-    nav { display: flex; flex-wrap: wrap; gap: 17px; }
-    a { color: inherit; text-decoration: none; }
-    a:hover { color: var(--accent); }
-    .intro { padding: 75px 0 60px; }
+    .brand { font-size: 18px; font-weight: 700; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .intro { padding: 95px 0 75px; }
     .eyebrow {
+      color: var(--blue);
+      text-transform: uppercase;
       font-size: 12px;
       letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--accent);
-      font-weight: bold;
+      font-weight: 700;
     }
     h1 {
-      font-size: clamp(38px, 6vw, 60px);
+      font-size: clamp(40px, 6vw, 62px);
       line-height: 1.2;
-      margin: 15px 0;
+      margin: 20px 0;
     }
-    h2 { font-size: 27px; }
-    h3 { font-size: 17px; margin-bottom: 4px; }
-    p { color: var(--muted); margin-top: 5px; }
-    .lead { font-size: 19px; max-width: 760px; }
+    h2 {
+      font-size: clamp(25px, 4vw, 33px);
+      margin: 15px 0 30px;
+    }
+    h3 { font-size: 18px; margin: 0 0 7px; }
+    p { color: var(--muted); max-width: 900px; }
+    .lead { font-size: 20px; color: #47566b; }
     section {
-      padding: 35px 0 45px;
+      padding: 65px 0;
       border-top: 1px solid var(--line);
     }
-    .entry { margin-bottom: 27px; }
-    .meta { color: var(--accent); font-size: 14px; }
-    .publication { margin: 0 0 20px; }
-    .links { display: flex; flex-wrap: wrap; gap: 18px; }
-    .links a { color: var(--accent); }
+    .soft-section { background: var(--soft); }
+    .section-inner { max-width: 900px; }
+    .entry {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+    .entry:last-child { border-bottom: none; }
+    .meta {
+      color: #527195;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 25px;
+    }
+    .links a, .text-link {
+      color: #476b90;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .citation { color: var(--ink); }
+    .tag {
+      display: inline-block;
+      background: #edf2f7;
+      padding: 5px 12px;
+      border-radius: 4px;
+      color: #475f7c;
+      font-size: 12px;
+      margin: 5px 7px 5px 0;
+    }
     footer {
-      padding-top: 30px;
-      padding-bottom: 30px;
       border-top: 1px solid var(--line);
-      font-size: 13px;
+      padding: 30px 0;
       color: var(--muted);
+      font-size: 13px;
     }
-    @media(max-width:650px) {
-      .intro { padding: 55px 0; }
-      nav { gap: 12px; }
+    @media(max-width:700px) {
+      .intro { padding: 60px 0; }
+      section { padding: 45px 0; }
+      nav { gap: 12px 18px; }
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  <a class="brand" href="index.html">Ankita Kotangale</a>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="research.html">Research</a>
-    <a href="publications.html">Publications</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="cv.html">CV</a>
-  </nav>
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Ankita Kotangale</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="cv.html" aria-current="page">CV</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </div>
 </header>
 
 <main>
-  <div class="intro">
-    <div class="eyebrow">Academic & Professional Background</div>
-    <h1>Curriculum Vitae</h1>
-    <p class="lead">
-      Ankita Kotangale
-      <br>
-      PhD Candidate in Learning Design & Technology
-      <br>
-      Purdue University
-    </p>
-    <div class="links">
-      <a href="mailto:akotanga@purdue.edu">Email</a>
-      <a href="https://www.linkedin.com/in/ankita-kotangale-21a366185/"
-         target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <div class="container">
+    <div class="intro">
+      <div class="eyebrow">Academic & Professional Background</div>
+      <h1>Curriculum Vitae</h1>
+      <p class="lead">
+        Ankita Kotangale<br>
+        PhD Candidate in Learning Design & Technology<br>
+        Purdue University
+      </p>
+      <div class="links">
+        <a href="mailto:akotanga@purdue.edu">Email ↗</a>
+        <a href="https://www.linkedin.com/in/ankita-kotangale-21a366185/"
+           target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+      </div>
     </div>
   </div>
 
   <section>
-    <div class="eyebrow">01 / Education</div>
-    <h2>Education</h2>
+    <div class="container section-inner">
+      <div class="eyebrow">01 / Education</div>
+      <h2>Education</h2>
 
-    <div class="entry">
-      <h3>PhD in Learning Design & Technology</h3>
-      <p>Purdue University · West Lafayette, Indiana</p>
+      <div class="entry">
+        <h3>PhD in Learning Design & Technology</h3>
+        <p class="meta">Purdue University · West Lafayette, IN</p>
+      </div>
+      <div class="entry">
+        <h3>MS in Technology Management</h3>
+        <p class="meta">Pittsburg State University · 2020</p>
+      </div>
+      <div class="entry">
+        <h3>BE in Information Technology</h3>
+        <p class="meta">S.B.J.I.T.M.R., Nagpur, India · 2018</p>
+      </div>
     </div>
+  </section>
 
-    <div class="entry">
-      <h3>MS in Technology Management</h3>
-      <p>Pittsburg State University · 2020</p>
-    </div>
+  <section class="soft-section">
+    <div class="container section-inner">
+      <div class="eyebrow">02 / Research Experience</div>
+      <h2>Research Experience</h2>
 
-    <div class="entry">
-      <h3>BE in Information Technology</h3>
-      <p>S.B.J.I.T.M.R., Nagpur, India · 2018</p>
+      <div class="entry">
+        <h3>Lead Researcher — GERI Design Thinking Study</h3>
+        <p class="meta">Purdue University · 2023–Present</p>
+        <p>
+          Examining changes in high school learners'
+          Design Thinking mindsets and scenario-based
+          application during authentic STEM experiences.
+          Developed and adapted assessment tools and
+          conducted pre/post quantitative analyses.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Researcher — FIRST Robotics Design Thinking Study</h3>
+        <p class="meta">Purdue University · 2026–Present</p>
+        <p>
+          Investigating Design Thinking mindset and
+          demonstrated application among students
+          in robotics learning environments.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Researcher — NSF-Funded DEAP Project</h3>
+        <p class="meta">Purdue University · 2023–2024</p>
+        <p>
+          Investigated computing competencies and
+          professional problem-solving practices,
+          including interviews and qualitative
+          and quantitative analysis.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Researcher — Best Practices in HyFlex Learning</h3>
+        <p class="meta">Purdue University · 2020–2021</p>
+        <p>
+          Contributed to research on HyFlex learning
+          environments and students' academic
+          and psychological needs.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Grievance Cell & Complaints Tracking System</h3>
+        <p class="meta">Research & Development · 2017–2018</p>
+        <p>
+          Developed and tested a mobile application
+          supporting citizen grievance tracking.
+        </p>
+      </div>
     </div>
   </section>
 
   <section>
-    <div class="eyebrow">02 / Research</div>
-    <h2>Research Experience</h2>
+    <div class="container section-inner">
+      <div class="eyebrow">03 / Scholarly Contributions</div>
+      <h2>Selected Publications</h2>
 
-    <div class="entry">
-      <h3>Lead Researcher — GERI Design Thinking Study</h3>
-      <p class="meta">Purdue University · 2023–Present</p>
+      <div class="entry">
+        <p class="citation">
+          Tavakoli, J., Exter, M., & Kotangale, A. (2026).
+          Integrating dispositions in instructional design:
+          An exploratory study in higher education.
+          <em>Instructional Science, 54</em>(1), Article 2.
+        </p>
+        <a class="text-link"
+           href="https://doi.org/10.1007/s11251-025-09762-3">
+          View publication ↗
+        </a>
+      </div>
+
+      <div class="entry">
+        <p class="citation">
+          Mentzer, N., Krishna, B., Kotangale, A., &
+          Mohandas, L. (2023). HYFLEX environment:
+          Addressing students' basic psychological needs.
+          <em>Learning Environments Research, 26</em>(1),
+          271–289.
+        </p>
+        <a class="text-link"
+           href="https://doi.org/10.1007/s10984-022-09431-z">
+          View publication ↗
+        </a>
+      </div>
+
       <p>
-        Studying Design Thinking development in high school
-        students through authentic STEM learning experiences,
-        using mindset instruments, scenario-based assessments,
-        and quantitative analyses.
+        Additional peer-reviewed publications,
+        manuscripts under review, manuscripts
+        in preparation, and conference presentations
+        are available on my Publications page.
       </p>
-    </div>
 
-    <div class="entry">
-      <h3>Researcher — FIRST Robotics Design Thinking Study</h3>
-      <p class="meta">Purdue University · 2026–Present</p>
-      <p>
-        Examining Design Thinking mindset and demonstrated
-        application in robotics learning environments.
-      </p>
-    </div>
-
-    <div class="entry">
-      <h3>Researcher — NSF-Funded DEAP Project</h3>
-      <p class="meta">Purdue University · 2023–2024</p>
-      <p>
-        Investigated computing competencies and professional
-        problem-solving practices through interviews,
-        qualitative analysis, and scholarly dissemination.
-      </p>
-    </div>
-
-    <div class="entry">
-      <h3>Researcher — HyFlex Learning Project</h3>
-      <p class="meta">Purdue University · 2020–2021</p>
-      <p>
-        Contributed to research examining student learning
-        experiences and psychological needs in HyFlex
-        educational environments.
-      </p>
-    </div>
-  </section>
-
-  <section>
-    <div class="eyebrow">03 / Publications</div>
-    <h2>Selected Peer-Reviewed Publications</h2>
-
-    <p class="publication">
-      Tavakoli, J., Exter, M., & Kotangale, A. (2026).
-      Integrating dispositions in instructional design:
-      An exploratory study in higher education.
-      <em>Instructional Science, 54</em>(1), Article 2.
-      <a href="https://doi.org/10.1007/s11251-025-09762-3">
-        DOI ↗
+      <a class="text-link" href="publications.html">
+        View All Publications & Presentations →
       </a>
-    </p>
-
-    <p class="publication">
-      Mentzer, N., Krishna, B., Kotangale, A., &
-      Mohandas, L. (2023). HYFLEX environment:
-      Addressing students' basic psychological needs.
-      <em>Learning Environments Research, 26</em>(1),
-      271–289.
-      <a href="https://doi.org/10.1007/s10984-022-09431-z">
-        DOI ↗
-      </a>
-    </p>
-
-    <p>
-      Additional publications, manuscripts under review,
-      and conference presentations are documented
-      in my full academic CV.
-    </p>
+    </div>
   </section>
 
-  <section>
-    <div class="eyebrow">04 / Teaching</div>
-    <h2>Teaching Experience</h2>
+  <section class="soft-section">
+    <div class="container section-inner">
+      <div class="eyebrow">04 / Teaching Experience</div>
+      <h2>Teaching Experience</h2>
 
-    <div class="entry">
-      <h3>Instructor — Think Like an Engineer</h3>
-      <p class="meta">Purdue GERI · Summers 2023, 2025, 2026</p>
-      <p>
-        Designed and taught engineering and Design Thinking
-        learning experiences for high school learners.
-      </p>
-    </div>
+      <div class="entry">
+        <h3>Instructor — Think Like an Engineer</h3>
+        <p class="meta">Purdue GERI · Summers 2023, 2025 & 2026</p>
+        <p>
+          Designed and taught authentic engineering
+          and Design Thinking activities for high
+          school learners.
+        </p>
+      </div>
 
-    <div class="entry">
-      <h3>Teaching Assistant / Instructor — TECH 120</h3>
-      <p class="meta">Purdue University · 2020–2022</p>
-      <p>
-        Supported project-based Design Thinking instruction
-        and collaborative undergraduate learning.
-      </p>
-    </div>
+      <div class="entry">
+        <h3>Teaching Assistant / Instructor — TECH 120</h3>
+        <p class="meta">Purdue University · 2020–2022</p>
+        <p>
+          Facilitated project-based learning,
+          team design activities, and feedback
+          for undergraduate learners.
+        </p>
+      </div>
 
-    <div class="entry">
-      <h3>Workshop Co-Designer & Facilitator</h3>
-      <p class="meta">Purdue University · 2024</p>
-      <p>
-        Designed and facilitated a Design Thinking and
-        website design workshop for high school students.
-      </p>
-    </div>
+      <div class="entry">
+        <h3>Workshop Co-Designer & Facilitator</h3>
+        <p class="meta">Purdue University · 2024</p>
+        <p>
+          Designed a Design Thinking and website design
+          workshop for high school students.
+        </p>
+      </div>
 
-    <div class="entry">
-      <h3>Course Instructor — Natural Disasters</h3>
-      <p class="meta">Grades 3–4 · 2020</p>
-      <p>
-        Designed inquiry-based science learning experiences
-        using experiments, simulations, and collaboration.
-      </p>
+      <div class="entry">
+        <h3>Instructor — Natural Disasters</h3>
+        <p class="meta">Grades 3–4 · 2020</p>
+        <p>
+          Taught inquiry-based science activities
+          through experiments, simulations,
+          and collaborative tasks.
+        </p>
+      </div>
     </div>
   </section>
 
   <section>
-    <div class="eyebrow">05 / Professional Experience</div>
-    <h2>Learning Design & Professional Experience</h2>
+    <div class="container section-inner">
+      <div class="eyebrow">05 / Professional Experience</div>
+      <h2>Learning Design & Professional Experience</h2>
 
-    <div class="entry">
-      <h3>Instructional Designer Intern — FIRST Robotics</h3>
-      <p class="meta">Purdue University · 2025–2026</p>
-      <p>
-        Conducted needs analysis and developed
-        instructional materials for off-season
-        robotics learning experiences.
-      </p>
+      <div class="entry">
+        <h3>Instructional Designer Intern — FIRST Robotics</h3>
+        <p class="meta">Purdue University · 2025–2026</p>
+        <p>
+          Conducted needs analysis and developed
+          instructional materials for off-season
+          robotics learning experiences.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Graduate Assistant — IT Support</h3>
+        <p class="meta">Purdue University · 2024–Present</p>
+        <p>
+          Provide technical support and develop
+          instructional resources supporting
+          technology adoption among university staff.
+        </p>
+      </div>
+
+      <div class="entry">
+        <h3>Peer Advisor — Career Services</h3>
+        <p class="meta">Pittsburg State University · 2019–2020</p>
+      </div>
     </div>
+  </section>
 
-    <div class="entry">
-      <h3>Graduate Assistant — IT Support</h3>
-      <p class="meta">Purdue University · 2024–Present</p>
-      <p>
-        Provide educational technology support, staff
-        training, and instructional resources.
-      </p>
-    </div>
+  <section class="soft-section">
+    <div class="container section-inner">
+      <div class="eyebrow">06 / Service</div>
+      <h2>Service & Leadership</h2>
 
-    <div class="entry">
-      <h3>Peer Advisor — Career Services</h3>
-      <p class="meta">Pittsburg State University · 2019–2020</p>
+      <div class="entry">
+        <h3>Purdue Association of Learning Design & Technology</h3>
+        <p class="meta">Officer · 2024–2025</p>
+        <p>
+          Supported student engagement, inclusive
+          programming, and professional development.
+        </p>
+      </div>
     </div>
   </section>
 
   <section>
-    <div class="eyebrow">06 / Leadership</div>
-    <h2>Service & Leadership</h2>
-    <div class="entry">
-      <h3>Purdue Association of Learning Design & Technology</h3>
-      <p class="meta">Officer · 2024–2025</p>
-      <p>
-        Supported inclusive programming, student
-        engagement, and professional development.
-      </p>
+    <div class="container section-inner">
+      <div class="eyebrow">07 / Research & Technical Skills</div>
+      <h2>Skills & Expertise</h2>
+
+      <div>
+        <span class="tag">Quantitative Research</span>
+        <span class="tag">Qualitative Research</span>
+        <span class="tag">Mixed Methods</span>
+        <span class="tag">Dedoose</span>
+        <span class="tag">Instrument Development</span>
+        <span class="tag">Reliability Analysis</span>
+        <span class="tag">Scenario-Based Assessment</span>
+        <span class="tag">Curriculum Development</span>
+        <span class="tag">Needs Analysis</span>
+        <span class="tag">Instructional Design</span>
+        <span class="tag">Project-Based Learning</span>
+        <span class="tag">Educational Technology</span>
+      </div>
     </div>
   </section>
 
-  <section>
-    <div class="eyebrow">07 / Skills</div>
-    <h2>Research & Professional Skills</h2>
-    <p>
-      Quantitative and qualitative research, mixed-methods
-      design, instrument adaptation, reliability analysis,
-      scenario-based assessment, Dedoose, curriculum
-      development, instructional design, needs analysis,
-      project-based learning, and educational technology.
-    </p>
-  </section>
 </main>
 
 <footer>
-  © 2026 Ankita Kotangale · Purdue University
+  <div class="container">
+    © 2026 Ankita Kotangale · Purdue University
+  </div>
 </footer>
 
 </body>
