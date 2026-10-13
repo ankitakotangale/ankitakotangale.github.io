@@ -14,6 +14,7 @@
       --line: #e8e0d8;
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       background: #fcfaf7;
@@ -30,60 +31,56 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 15px;
-      padding-top: 24px;
-      padding-bottom: 24px;
+      padding: 24px max(25px, calc((100% - 950px)/2));
       border-bottom: 1px solid var(--line);
     }
     .brand, h1, h2 {
       font-family: "Libre Baskerville", Georgia, serif;
     }
-    .brand { font-weight: bold; font-size: 19px; }
-    nav { display: flex; flex-wrap: wrap; gap: 18px; }
+    .brand { font-size: 19px; font-weight: bold; }
+    nav { display: flex; flex-wrap: wrap; gap: 17px; }
     a { color: inherit; text-decoration: none; }
     a:hover { color: var(--accent); }
-    .intro { padding: 85px 0 55px; }
+    .intro { padding: 85px 0 60px; }
     .eyebrow {
       color: var(--accent);
       text-transform: uppercase;
-      font-size: 12px;
       letter-spacing: 2px;
+      font-size: 12px;
       font-weight: bold;
     }
     h1 {
       font-size: clamp(36px, 6vw, 58px);
       line-height: 1.25;
+      margin: 18px 0;
     }
-    h2 { font-size: 27px; margin: 0 0 25px; }
-    .lead { font-size: 19px; max-width: 740px; }
+    h2 { font-size: 28px; margin-bottom: 28px; }
     p { color: var(--muted); }
+    .lead { font-size: 19px; max-width: 790px; }
     section {
-      padding: 42px 0;
+      padding: 45px 0;
       border-top: 1px solid var(--line);
     }
     .entry {
-      padding: 22px 0;
+      padding: 20px 0;
       border-bottom: 1px solid var(--line);
     }
-    .entry:last-child { border-bottom: 0; }
-    .entry-title {
-      font-weight: 700;
-      color: var(--ink);
-      margin: 0 0 6px;
-    }
-    .meta { font-size: 14px; margin: 5px 0; }
-    .status {
+    .entry:last-child { border-bottom: none; }
+    .citation { margin: 0 0 10px; color: var(--ink); }
+    .entry a { color: var(--accent); }
+    .entry a:hover { text-decoration: underline; }
+    .tag {
       display: inline-block;
       font-size: 12px;
       color: #8a604d;
       border: 1px solid #e1d5ca;
       border-radius: 20px;
       padding: 3px 12px;
-      margin-top: 7px;
     }
     footer {
+      border-top: 1px solid var(--line);
       padding-top: 30px;
       padding-bottom: 30px;
-      border-top: 1px solid var(--line);
       font-size: 13px;
       color: var(--muted);
     }
@@ -94,84 +91,231 @@
   </style>
 </head>
 <body>
-  <header>
-    <a class="brand" href="index.html">Ankita Kotangale</a>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="publications.html">Publications</a>
-      <a href="index.html#teaching">Teaching</a>
-      <a href="index.html#contact">Contact</a>
-    </nav>
-  </header>
 
-  <main>
-    <div class="intro">
-      <div class="eyebrow">Academic Scholarship</div>
-      <h1>Publications & Presentations</h1>
-      <p class="lead">
-        My scholarly work examines design thinking,
-        authentic learning experiences, and computing
-        and engineering education.
+<header>
+  <a class="brand" href="index.html">Ankita Kotangale</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="cv.html">CV</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <div class="intro">
+    <div class="eyebrow">Research & Scholarship</div>
+    <h1>Publications & Presentations</h1>
+    <p class="lead">
+      My scholarly work explores Design Thinking,
+      instructional design, computing and engineering
+      education, and authentic learning environments.
+      This page includes peer-reviewed publications,
+      ongoing manuscripts, technical reports, and
+      conference presentations.
+    </p>
+  </div>
+
+  <section>
+    <div class="eyebrow">01 / Published Research</div>
+    <h2>Peer-Reviewed Publications</h2>
+
+    <div class="entry">
+      <p class="citation">
+        Tavakoli, J., Exter, M., & Kotangale, A. (2026).
+        Integrating dispositions in instructional design:
+        An exploratory study in higher education.
+        <em>Instructional Science, 54</em>(1), Article 2.
+      </p>
+      <a href="https://doi.org/10.1007/s11251-025-09762-3"
+         target="_blank" rel="noopener noreferrer">
+        View Publication ↗
+      </a>
+    </div>
+
+    <div class="entry">
+      <p class="citation">
+        Mentzer, N., Krishna, B., Kotangale, A., &
+        Mohandas, L. (2023).
+        HYFLEX environment: Addressing students'
+        basic psychological needs.
+        <em>Learning Environments Research, 26</em>(1),
+        271–289.
+      </p>
+      <a href="https://doi.org/10.1007/s10984-022-09431-z"
+         target="_blank" rel="noopener noreferrer">
+        View Publication ↗
+      </a>
+    </div>
+
+    <div class="entry">
+      <p class="citation">
+        Kotangale, A., More, S., Sakharkar, P.,
+        Deshkar, D., & Banabakode, D. (2018).
+        Grievance cell and complaints tracking
+        system for citizens.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">02 / Ongoing Scholarship</div>
+    <h2>Manuscripts Under Review</h2>
+
+    <div class="entry">
+      <p class="citation">
+        Kotangale, A., Tavakoli, J., & Janakiraman, S.
+        Investigating teaching methods in environmentally
+        sustainable education within university
+        engineering courses: A review of existing
+        literature.
+      </p>
+      <span class="tag">Under Review</span>
+    </div>
+
+    <div class="entry">
+      <p class="citation">
+        Kotangale, A., Exter, M., & Tagare, D.
+        Computing professionals solving problems
+        through a Design Thinking lens.
+      </p>
+      <span class="tag">Under Review</span>
+    </div>
+
+    <div class="entry">
+      <p class="citation">
+        Kotangale, A., Tavakoli, J., & Exter, M.
+        Perspectives of computing and engineering
+        educators on Design Thinking.
+      </p>
+      <span class="tag">Under Review</span>
+    </div>
+
+    <div class="entry">
+      <p class="citation">
+        Kotangale, A., Exter, M., & Tavakoli, J.
+        Perspectives of computing and engineering
+        educators on design models.
+      </p>
+      <span class="tag">Under Review</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">03 / Developing Research</div>
+    <h2>Manuscripts in Preparation</h2>
+
+    <div class="entry">
+      <p class="citation">
+        Kotangale, A., Yakut, N., & Exter, M.
+        Understanding the Design Thinking mindset
+        among adolescents in Grades 7–12.
+      </p>
+      <span class="tag">In Preparation</span>
+    </div>
+
+    <div class="entry">
+      <p class="citation">
+        Kotangale, A., Yakut, N., & Exter, M.
+        Developing the Design Thinking mindset
+        in high school students.
+      </p>
+      <span class="tag">In Preparation</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow">04 / Scholarly Events</div>
+    <h2>Conference Presentations</h2>
+
+    <div class="entry">
+      <p class="citation">
+        Kotangale, A., Yakut, N., & Exter, M.
+        (2026, November 3–7).
+        Developing the Design Thinking mindset
+        in high school students.
+        <em>AECT International Convention</em>,
+        Chicago, IL, United States.
+      </p>
+      <span class="tag">Upcoming</span>
+    </div>
+
+    <div class="entry">
+      <p class="citation">
+        Tavakoli, J., Exter, M., & Kotangale, A.
+        (2025, October).
+        Integrating dispositions in instructional design:
+        An exploratory study in higher education.
+        <em>AECT International Convention</em>,
+        Las Vegas, NV, United States.
       </p>
     </div>
 
-    <section>
-      <h2>Conference Presentations</h2>
-
-      <div class="entry">
-        <p class="entry-title">
-          Perspectives of Higher Computing and Engineering
-          Educators on Design Thinking Skills Required
-          in Professional Jobs
-        </p>
-        <p class="meta">
-          Association for Educational Communications
-          and Technology (AECT), 2024
-        </p>
-        <span class="status">Conference Presentation</span>
-      </div>
-    </section>
-
-    <section>
-      <h2>Journal Manuscripts</h2>
-      <p>
-        Manuscripts related to my ongoing research
-        are currently in development. Bibliographic
-        information will be added as manuscripts
-        progress through submission and publication.
+    <div class="entry">
+      <p class="citation">
+        Kotangale, A., Tavakoli, J., & Exter, M.
+        (2024, October).
+        Perspectives of computing and engineering
+        educators on Design Thinking.
+        <em>AECT International Convention</em>,
+        Kansas City, MO, United States.
       </p>
-    </section>
+    </div>
 
-    <section>
-      <h2>Research in Progress</h2>
+    <div class="entry">
+      <p class="citation">
+        Tavakoli, J., Kotangale, A., Exter, M.,
+        Tagare, D., & Sabin, M. (2023, October).
+        Dispositions in computing and implications
+        for instructional design education.
+        <em>AECT International Convention</em>,
+        Orlando, FL, United States.
+      </p>
+    </div>
 
-      <div class="entry">
-        <p class="entry-title">
-          Design Thinking Development Through Authentic
-          Engineering Design Experiences
-        </p>
-        <p class="meta">
-          GERI High School Design Thinking Study
-        </p>
-        <span class="status">Research in Progress</span>
-      </div>
+    <div class="entry">
+      <p class="citation">
+        Kotangale, A., Tavakoli, J., & Janakiraman, S.
+        (2023, October).
+        Exploring pedagogical practices in environmentally
+        sustainable education in university engineering
+        courses: A literature review.
+        <em>AECT International Convention</em>,
+        Orlando, FL, United States.
+      </p>
+    </div>
 
-      <div class="entry">
-        <p class="entry-title">
-          Design Thinking in FIRST Robotics Programs
-        </p>
-        <p class="meta">
-          FTC and FRC Robotics Research
-        </p>
-        <span class="status">Research in Progress</span>
-      </div>
-    </section>
-  </main>
+    <div class="entry">
+      <p class="citation">
+        Tavakoli, J., & Kotangale, A. (2023, April).
+        Dispositions in instructional designing.
+        <em>AGSERS</em>, Purdue University,
+        West Lafayette, IN, United States.
+      </p>
+    </div>
+  </section>
 
-  <footer>
-    © 2026 Ankita Kotangale · Purdue University
-  </footer>
+  <section>
+    <div class="eyebrow">05 / Additional Scholarship</div>
+    <h2>Technical Reports</h2>
+
+    <div class="entry">
+      <p class="citation">
+        Exter, M., Sabin, M., Janakiraman, S.,
+        Tagare, D., Kotangale, A., & Duan, S. (2023).
+        <em>DEAP competencies: Dispositions.</em>
+        DEAPening Employer Academic Partnerships.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 Ankita Kotangale · Purdue University
+</footer>
+
 </body>
 </html>
